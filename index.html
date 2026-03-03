@@ -3,31 +3,32 @@
   <head>
     <meta charset="UTF-8" />
 
+    <!-- DEPLOY MARKER: IDAPES_GHPAGES_BUILD_V1 -->
+
     <!-- Segurança -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; img-src 'self' data: https:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https: data:; connect-src 'self' https:;"
     />
-
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-
     <meta
       http-equiv="Permissions-Policy"
       content="camera=(), microphone=(), geolocation=(), usb=(), payment=()"
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>IDAPES - Instituto de Desenvolvimento e Apoio ao Ensino e Pesquisa</title>
 
-    <!-- Script SPA -->
+    <!-- SPA rewrite -->
     <script src="./spa-rewrite.js" defer></script>
   </head>
 
   <body>
     <div id="root"></div>
 
-    <!-- IMPORTANTE: caminho relativo -->
-    <script type="module" src="src/main.tsx"></script>
+    <!-- IMPORTANTE:
+         - NÃO pode ser /src/main.tsx (absoluto), senão vira https://idapes2026.github.io/src/main.tsx
+         - Tem que ser relativo para o Vite compilar e depois virar /site/assets/... no dist -->
+    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
