@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://idapes2026.github.io/site/sitemap.xml
