@@ -9,26 +9,23 @@
       content="default-src 'self'; img-src 'self' data: https:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https: data:; connect-src 'self' https:;"
     />
 
-    <!-- Segurança: evita vazamento de URL em links externos -->
+    <!-- Segurança -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- Segurança: bloqueia acesso a recursos do dispositivo -->
     <meta
       http-equiv="Permissions-Policy"
       content="camera=(), microphone=(), geolocation=(), usb=(), payment=()"
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>IDAPES - Instituto de Desenvolvimento e Apoio ao Ensino e Pesquisa</title>
 
-    <!-- SPA: aplica a rota real antes do React carregar -->
+    <!-- SPA rewrite -->
     <script src="./spa-rewrite.js" defer></script>
   </head>
 
   <body>
     <div id="root"></div>
-
-    <!-- Script principal do React -->
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
