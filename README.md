@@ -1,13 +1,13 @@
-# Site (GitHub Pages) — Segurança
+# IDAPES — Instituto de Desenvolvimento e Apoio ao Ensino e Pesquisa
 
-Este projeto é um site estático (Vite + React) hospedado no GitHub Pages.
+Site institucional do IDAPES.
 
-## ⚠️ Importante (Segurança)
-- **Não coloque chaves de API (ex.: GEMINI_API_KEY) no front-end.**
-- Tudo que entra no build do site pode ser inspecionado publicamente no navegador (DevTools).
-- Se você precisar de recursos de IA, faça via **backend** (API própria / serverless) para manter segredos protegidos.
+Este repositório contém os arquivos do site oficial hospedado no GitHub Pages.
 
-## Desenvolvimento local
-```bash
-npm install
-npm run dev
+## Tecnologias utilizadas
+
+- React
+- Vite
+- Tailwind CSS
+
+## Publicação 1.0
