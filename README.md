@@ -1,20 +1,13 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Site (GitHub Pages) — Segurança
 
-# Run and deploy your AI Studio app
+Este projeto é um site estático (Vite + React) hospedado no GitHub Pages.
 
-This contains everything you need to run your app locally.
+## ⚠️ Importante (Segurança)
+- **Não coloque chaves de API (ex.: GEMINI_API_KEY) no front-end.**
+- Tudo que entra no build do site pode ser inspecionado publicamente no navegador (DevTools).
+- Se você precisar de recursos de IA, faça via **backend** (API própria / serverless) para manter segredos protegidos.
 
-View your app in AI Studio: https://ai.studio/apps/ce8111eb-7f56-4f75-afb9-f3f96302c032
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Desenvolvimento local
+```bash
+npm install
+npm run dev
