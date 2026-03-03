@@ -9,7 +9,6 @@
       content="default-src 'self'; img-src 'self' data: https:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https: data:; connect-src 'self' https:;"
     />
 
-    <!-- Segurança -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <meta
@@ -18,14 +17,16 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>IDAPES - Instituto de Desenvolvimento e Apoio ao Ensino e Pesquisa</title>
 
-    <!-- SPA rewrite -->
+    <!-- SPA rewrite (mantém rota após redirect do 404) -->
     <script src="./spa-rewrite.js" defer></script>
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- IMPORTANTE: caminho RELATIVO (não use /src/main.tsx) -->
+    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
